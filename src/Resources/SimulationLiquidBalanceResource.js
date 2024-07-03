@@ -1,11 +1,11 @@
-class BalanceResource {
+class SimulationLiquidBalanceResource {
     constructor(rawData) {
         this.rawData = rawData;
     }
 
     toJson() {
         return {
-            installments: this.groupResponse(this.rawData.retorno)
+            retorno: this.groupResponse(this.rawData.retorno)
         };
     }
 
@@ -28,4 +28,4 @@ class BalanceResource {
     }
 }
 
-module.exports = BalanceResource;
+module.exports = SimulationLiquidBalanceResource;

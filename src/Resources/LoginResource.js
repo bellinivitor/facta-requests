@@ -6,7 +6,7 @@ class LoginResource {
     toJson() {
         return {
             token: this.rawData.token,
-            expireAt: this.rawData.expira
+            expira: this.rawData.expira
         };
     }
 }

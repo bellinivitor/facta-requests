@@ -1,9 +1,9 @@
 class SimulationLiquidBalanceDTO {
-    constructor(params) {
-        this.cpf = params.cpf;
-        this.rate = params.taxa;
-        this.table = params.tabela;
-        this.installments = params.parcelas; // Installments already grouped
+    constructor(payload) {
+        this.cpf = payload.cpf;
+        this.taxa = payload.taxa;
+        this.tabela = payload.tabela;
+        this.parcelas = payload.parcelas; // Installments already grouped
     }
 
     toJson() {
